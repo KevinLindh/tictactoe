@@ -1,0 +1,65 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  text-shadow: 3px 3px 2px #bcbed2;
+  margin-bottom: 10px;
+}
+
+.grid {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid #525252;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 8px 8px 2px 1px #bcbed2;
+  
+  
+/*   justify-items: center; */
+  
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #525252;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.grid-container:hover {
+    background-color: #ededed;
+}
+
+
+.reset-button, .mode, .resetScores{
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 5px 25px;
+  box-shadow: 8px 8px 2px 1px #bcbed2;
+  border-radius: 5px;
+  background-color: #a7abdd
+  
+}
+
+.reset-button:hover, .mode:hover, .resetScores:hover{
+  background-color: #bdc0ea;
+  cursor: pointer;
+}
